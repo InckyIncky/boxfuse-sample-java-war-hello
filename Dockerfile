@@ -1,3 +1,3 @@
-From: maven:latest
+FROM maven:latest
 
 RUN mvn package
