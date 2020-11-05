@@ -1,3 +1,5 @@
 FROM maven:latest
 
-RUN mvn package
+RUN pwd
+
+RUN mvn package .
