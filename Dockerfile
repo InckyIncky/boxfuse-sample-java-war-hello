@@ -1,5 +1,10 @@
 FROM maven:latest
 
-RUN pwd
+ARG BUILD_DIR=/home/boxfuse-sample-java-war-hello
 
-RUN mvn package .
+RUN mkdir -p $BUILD_DIR
+WORKDIR $BUILD_DIR
+
+COPY . $BUILD_DIR
+
+RUN mvn package 
