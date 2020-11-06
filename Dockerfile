@@ -8,3 +8,5 @@ WORKDIR $BUILD_DIR
 COPY . $BUILD_DIR
 
 RUN mvn package 
+
+COPY --from=0 $BUILD_DIR/target/hello-1.0.war
