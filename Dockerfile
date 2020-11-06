@@ -1,4 +1,4 @@
-FROM maven:latest
+FROM maven:latest-alpine
 
 ARG BUILD_DIR=/home/boxfuse-sample-java-war-hello
 
